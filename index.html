@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Marwa — Logo & Brand Identity Designer</title>
+  <meta name="description" content="Mohammed Marwa is a Logo & Brand Identity Designer crafting distinctive visual identities, thoughtful brand applications, and strategic visual systems.">
+  <meta name="author" content="Mohammed Marwa">
+
+  <!-- Google Fonts: Syne (Display), Playfair Display (Serif), Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. NAVIGATION BAR
+       ======================================================================== -->
+  <header class="header" id="mainHeader">
+    <div class="container nav__wrapper">
+      <!-- Designer Wordmark -->
+      <a href="#hero" class="nav__brand" aria-label="Mohammed Marwa Home">
+        <span class="nav__brand-name">Mohammed Marwa</span>
+        <span class="nav__brand-title">Logo & Brand Identity</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav__menu" aria-label="Primary Navigation">
+        <a href="#hero" class="nav__link is-active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#testimonials" class="nav__link">Testimonials</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#contact" class="nav__link">Get in Touch</a>
+      </nav>
+
+      <!-- Action CTA Buttons -->
+      <div class="nav__actions">
+        <a href="#services" class="btn btn--outline btn--sm">Request a Design</a>
+        <a href="#contact" class="btn btn--primary btn--sm">Contact Me</a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="nav__brand" style="margin-bottom: 2rem;">
+        <span class="nav__brand-name">Mohammed Marwa</span>
+        <span class="nav__brand-title">Logo & Brand Identity</span>
+      </div>
+      <nav class="mobile-nav__list">
+        <a href="#hero" class="mobile-nav__link">Home</a>
+        <a href="#about" class="mobile-nav__link">About</a>
+        <a href="#education" class="mobile-nav__link">Education</a>
+        <a href="#experience" class="mobile-nav__link">Experience</a>
+        <a href="#skills" class="mobile-nav__link">Skills</a>
+        <a href="#projects" class="mobile-nav__link">Projects</a>
+        <a href="#testimonials" class="mobile-nav__link">Testimonials</a>
+        <a href="#services" class="mobile-nav__link">Services</a>
+        <a href="#contact" class="mobile-nav__link">Get in Touch</a>
+      </nav>
+    </div>
+    <div class="mobile-nav__actions">
+      <a href="#services" class="btn btn--outline">Request a Design</a>
+      <a href="#contact" class="btn btn--primary">Contact Me</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ======================================================================
+         2. HOME / HERO SECTION
+         ====================================================================== -->
+    <section class="section hero" id="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <!-- Left Column: Content -->
+          <div class="hero__content">
+            <div class="hero__status-badge">
+              <span class="hero__status-dot"></span>
+              <span>Available for Select Branding & Identity Projects</span>
+            </div>
+
+            <h1 class="heading-display hero__title">Mohammed Marwa</h1>
+            <p class="hero__subtitle">Logo & Brand Identity Designer</p>
+
+            <p class="text-lead hero__intro">
+              I create distinctive visual identities and thoughtful design solutions that help brands express their personality, communicate clearly, and stand out.
+            </p>
+
+            <div class="hero__cta-group">
+              <a href="#projects" class="btn btn--primary btn--icon-arrow">
+                View My Work
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn--outline">Get in Touch</a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="hero__meta-item">
+                <span class="hero__meta-label">Focus Areas</span>
+                <span class="hero__meta-value">Visual Identity · Logo Design · Packaging</span>
+              </div>
+              <div class="hero__meta-item">
+                <span class="hero__meta-label">Design Approach</span>
+                <span class="hero__meta-value">Strategic, Editorial & Typographic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Dedicated Portrait Slot -->
+          <div class="hero__media">
+            <div class="hero__portrait-wrapper">
+              <!-- Real HTML image element with graceful fallback -->
+              <img
+                src="assets/profile.jpeg"
+                alt="Mohammed Marwa, Logo and Brand Identity Designer"
+                class="hero__portrait"
+                onerror="handleImageError(this, 'Mohammed Marwa Portrait', 'images/profile.jpg')"
+              >
+              <div class="hero__frame-corner hero__frame-corner--tl"></div>
+              <div class="hero__frame-corner hero__frame-corner--br"></div>
+            </div>
+
+            <!-- Restrained typographic badge -->
+            <div class="hero__floating-card">
+              <div class="hero__floating-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="hero__floating-title">Creative Brand Direction</p>
+                <p class="hero__floating-subtitle">Tailored visual languages</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. ABOUT ME SECTION
+         ====================================================================== -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">About Me</span>
+          <h2 class="heading-section">Design Philosophy & Background</h2>
+        </div>
+
+        <div class="about__grid">
+          <!-- Left: Biography -->
+          <div class="about__bio-col">
+            <p class="about__bio-text">
+              I'm a graphic designer focused on logo design, visual identity, and creative brand applications. I enjoy developing visual directions that reflect a project's personality and translating ideas into clear, cohesive design solutions.
+            </p>
+            <p class="text-lead" style="font-size: 1rem; color: var(--color-taupe);">
+              Visual identity is more than surface aesthetics—it is the strategic visual voice through which a business or product connects with its audience. My passion lies in distilling the core essence of each project into an enduring visual system that communicates with clarity, emotion, and aesthetic distinction.
+            </p>
+
+            <div style="margin-top: 1rem;">
+              <a href="assets/Mohammed-Marwa-CV.pdf" download="Mohammed-Marwa-CV.pdf" class="btn btn--outline btn-download-cv">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Design Approach & Quick Skills -->
+          <div class="about__approach-card">
+            <h3 class="about__approach-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              My Design Approach
+            </h3>
+
+            <p style="font-size: 0.92rem; color: var(--color-muted); margin-bottom: 1.25rem;">
+              My design process is built around harmonizing five fundamental pillars:
+            </p>
+
+            <ul class="about__approach-list">
+              <li class="about__approach-item">
+                <span class="about__approach-marker">01</span>
+                <span><strong>Visual Appeal:</strong> Creating refined, elegant aesthetics that elevate perceived value.</span>
+              </li>
+              <li class="about__approach-item">
+                <span class="about__approach-marker">02</span>
+                <span><strong>Clarity & Communication:</strong> Ensuring the core brand message is understood instantly.</span>
+              </li>
+              <li class="about__approach-item">
+                <span class="about__approach-marker">03</span>
+                <span><strong>Brand Consistency:</strong> Unifying all physical and digital collateral under one clear design rulebook.</span>
+              </li>
+              <li class="about__approach-item">
+                <span class="about__approach-marker">04</span>
+                <span><strong>Typography & Composition:</strong> Meticulous attention to letterforms, spacing, and balanced layout geometry.</span>
+              </li>
+              <li class="about__approach-item">
+                <span class="about__approach-marker">05</span>
+                <span><strong>Tailored Solutions:</strong> Designing specifically for the unique context and character of each brand.</span>
+              </li>
+            </ul>
+
+            <!-- Quick Skills Tags -->
+            <div>
+              <p class="about__tags-title">Core Disciplines</p>
+              <div class="about__tags-wrap">
+                <span class="skill-tag">Logo Design</span>
+                <span class="skill-tag">Visual Identity</span>
+                <span class="skill-tag">Brand Guidelines</span>
+                <span class="skill-tag">Social Media Design</span>
+                <span class="skill-tag">Packaging Design</span>
+                <span class="skill-tag">Print Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. EDUCATION & CERTIFICATIONS (POSTER-STYLE HORIZONTAL SCROLL)
+         ====================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header section-header--split">
+          <div>
+            <span class="eyebrow">Academic & Professional Credentials</span>
+            <h2 class="heading-section">Education & Certifications</h2>
+          </div>
+          <div class="education__controls">
+            <button class="scroll-btn" id="eduPrevBtn" aria-label="Scroll education items left">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="scroll-btn" id="eduNextBtn" aria-label="Scroll education items right">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Horizontal Scrolling Track -->
+        <div class="education__track-wrapper">
+          <div class="education__track" id="educationTrack" tabindex="0" aria-label="Horizontal education gallery">
+            
+            <!-- Poster Card 1: Bachelor of Commerce -->
+            <article class="poster-card" data-edu="bachelor" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Bachelor of Commerce details">
+              <div class="poster-card__top">
+                <span class="poster-card__badge">Academic Degree</span>
+                <p class="poster-card__inst">Zagazig University</p>
+                <p class="poster-card__assoc">Faculty of Commerce</p>
+              </div>
+              <div class="poster-card__center">
+                <h3 class="poster-card__title">Bachelor of Commerce</h3>
+                <p class="poster-card__field">General Management & Marketing</p>
+              </div>
+              <div class="poster-card__bottom">
+                <span class="poster-card__grade">Grade: Excellent</span>
+                <span class="poster-card__action">Details ↗</span>
+              </div>
+            </article>
+
+            <!-- Poster Card 2: Marketing Diploma -->
+            <article class="poster-card" data-edu="marketing" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Marketing Diploma details">
+              <div class="poster-card__top">
+                <span class="poster-card__badge">Professional Diploma</span>
+                <p class="poster-card__inst">ITEDA Creativa</p>
+                <p class="poster-card__assoc">Associated with MCIT</p>
+              </div>
+              <div class="poster-card__center">
+                <h3 class="poster-card__title">Marketing Diploma</h3>
+                <p class="poster-card__field">Campaign Planning & Practical Execution</p>
+              </div>
+              <div class="poster-card__bottom">
+                <span class="poster-card__grade">MCIT Program</span>
+                <span class="poster-card__action">Details ↗</span>
+              </div>
+            </article>
+
+            <!-- Poster Card 3: Graphic Design Diploma -->
+            <article class="poster-card" data-edu="graphic" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Graphic Design Diploma details">
+              <div class="poster-card__top">
+                <span class="poster-card__badge">Specialized Diploma</span>
+                <p class="poster-card__inst">NTI at Creativa</p>
+                <p class="poster-card__assoc">Associated with MCIT</p>
+              </div>
+              <div class="poster-card__center">
+                <h3 class="poster-card__title">Graphic Design Diploma</h3>
+                <p class="poster-card__field">Visual Identity & Capstone: THEA Perfume</p>
+              </div>
+              <div class="poster-card__bottom">
+                <span class="poster-card__grade">Brand Capstone</span>
+                <span class="poster-card__action">Details ↗</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Modal Popup -->
+    <div class="modal-overlay" id="educationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-box">
+        <button class="modal__close" id="modalClose" aria-label="Close modal">✕</button>
+        <span class="modal__badge" id="modalBadge">Academic Degree</span>
+        <h3 class="modal__title" id="modalTitle">Title</h3>
+        <p class="modal__institution" id="modalInstitution">Institution</p>
+        <p class="modal__desc" id="modalDesc">Description text goes here.</p>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         5. EXPERIENCE SECTION (EDITORIAL TIMELINE)
+         ====================================================================== -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Practical Milestones</span>
+          <h2 class="heading-section">Experience & Practice</h2>
+          <p class="section-header__desc">
+            Documented experience spanning visual identity design, marketing execution, and diploma capstone projects.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Entry 1: Graphic Design & Branding Practice -->
+          <div class="timeline-item">
+            <div class="timeline-item__marker"></div>
+            <article class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__role">Graphic Design & Brand Identity Practice</h3>
+                  <p class="timeline-card__org">Independent Design & Visual Systems</p>
+                </div>
+                <span class="timeline-card__tag">Core Practice</span>
+              </div>
+              <p class="timeline-card__desc">
+                Developing custom logo marks, comprehensive brand guidelines, color palettes, and typographic systems. Focus on translating core brand values into cohesive visual assets across packaging, digital collateral, and print.
+              </p>
+              <div class="timeline-card__deliverables">
+                <span class="timeline-card__deliverable">Logo Marks</span>
+                <span class="timeline-card__deliverable">Brand Style Guides</span>
+                <span class="timeline-card__deliverable">Packaging Mockups</span>
+                <span class="timeline-card__deliverable">Typography Hierarchy</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Entry 2: Educational Practical Project — NTI Creativa -->
+          <div class="timeline-item">
+            <div class="timeline-item__marker"></div>
+            <article class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__role">Visual Identity Development — THEA Perfume</h3>
+                  <p class="timeline-card__org">NTI at Creativa (MCIT Graphic Design Diploma)</p>
+                </div>
+                <span class="timeline-card__tag">Capstone Project</span>
+              </div>
+              <p class="timeline-card__desc">
+                Developed the complete visual identity system for THEA, an upscale fragrance brand. Responsibilities encompassed logo design, conceptual geometric rationale, curated color palette, typography selection, luxury packaging design, business cards, advertising banners, and social media creative suite.
+              </p>
+              <div class="timeline-card__deliverables">
+                <span class="timeline-card__deliverable">Full Brand Architecture</span>
+                <span class="timeline-card__deliverable">Perfume Packaging</span>
+                <span class="timeline-card__deliverable">Social Media Suite</span>
+                <span class="timeline-card__deliverable">Stationery Design</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Entry 3: Marketing & Social Media Management -->
+          <div class="timeline-item">
+            <div class="timeline-item__marker"></div>
+            <article class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__role">Marketing & Social Media Page Management</h3>
+                  <p class="timeline-card__org">Creative Visual Communication</p>
+                </div>
+                <span class="timeline-card__tag">Marketing & Content</span>
+              </div>
+              <p class="timeline-card__desc">
+                Designing cohesive social media layouts, advertising creatives, and promotional content. Implementing visual consistency to strengthen digital presence and boost audience engagement.
+              </p>
+              <div class="timeline-card__deliverables">
+                <span class="timeline-card__deliverable">Social Media Grid</span>
+                <span class="timeline-card__deliverable">Ad Banners</span>
+                <span class="timeline-card__deliverable">Content Strategy</span>
+                <span class="timeline-card__deliverable">Visual Storytelling</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Entry 4: Practical Marketing Project Work -->
+          <div class="timeline-item">
+            <div class="timeline-item__marker"></div>
+            <article class="timeline-card">
+              <div class="timeline-card__header">
+                <div>
+                  <h3 class="timeline-card__role">Campaign Planning & Marketing Practicum</h3>
+                  <p class="timeline-card__org">ITEDA Creativa (MCIT Marketing Diploma)</p>
+                </div>
+                <span class="timeline-card__tag">Applied Learning</span>
+              </div>
+              <p class="timeline-card__desc">
+                Engaged in practical campaign-related projects, market positioning analysis, and creative communication workflows aligning business goals with visual marketing execution.
+              </p>
+              <div class="timeline-card__deliverables">
+                <span class="timeline-card__deliverable">Campaign Frameworks</span>
+                <span class="timeline-card__deliverable">Audience Persona</span>
+                <span class="timeline-card__deliverable">Creative Messaging</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. SKILLS SECTION (HORIZONTAL PROGRESS BARS)
+         ====================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Technical Capabilities</span>
+          <h2 class="heading-section">Skills & Capabilities</h2>
+          <p class="section-header__desc">
+            Organized into five core disciplines, with proficiency scores calibrated to practical application.
+          </p>
+        </div>
+
+        <div class="skills__grid">
+          <!-- Group A: Branding & Identity -->
+          <div class="skills__group">
+            <div class="skills__group-header">
+              <h3 class="skills__group-title">Branding & Identity</h3>
+              <span class="skills__group-category">Core</span>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Visual Identity Design</span>
+                <span class="skill-bar__percent">95%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Visual Identity Design 95%">
+                <div class="skill-bar__fill" data-percent="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Logo Design</span>
+                <span class="skill-bar__percent">95%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Logo Design 95%">
+                <div class="skill-bar__fill" data-percent="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Brand Guidelines</span>
+                <span class="skill-bar__percent">90%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Brand Guidelines 90%">
+                <div class="skill-bar__fill" data-percent="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Typography</span>
+                <span class="skill-bar__percent">88%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Typography 88%">
+                <div class="skill-bar__fill" data-percent="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Color Theory</span>
+                <span class="skill-bar__percent">92%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Color Theory 92%">
+                <div class="skill-bar__fill" data-percent="92"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Visual Consistency</span>
+                <span class="skill-bar__percent">94%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" aria-label="Visual Consistency 94%">
+                <div class="skill-bar__fill" data-percent="94"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group B: Brand Applications -->
+          <div class="skills__group">
+            <div class="skills__group-header">
+              <h3 class="skills__group-title">Brand Applications</h3>
+              <span class="skills__group-category">Physical</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Packaging Design</span>
+                <span class="skill-bar__percent">90%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Packaging Design 90%">
+                <div class="skill-bar__fill" data-percent="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Business Card Design</span>
+                <span class="skill-bar__percent">92%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Business Card Design 92%">
+                <div class="skill-bar__fill" data-percent="92"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Menu Design</span>
+                <span class="skill-bar__percent">85%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Menu Design 85%">
+                <div class="skill-bar__fill" data-percent="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Print Design</span>
+                <span class="skill-bar__percent">88%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Print Design 88%">
+                <div class="skill-bar__fill" data-percent="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Mockups & Presentations</span>
+                <span class="skill-bar__percent">92%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Mockups and Presentations 92%">
+                <div class="skill-bar__fill" data-percent="92"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group C: Digital Design -->
+          <div class="skills__group">
+            <div class="skills__group-header">
+              <h3 class="skills__group-title">Digital Design</h3>
+              <span class="skills__group-category">Online</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Social Media Design</span>
+                <span class="skill-bar__percent">92%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Social Media Design 92%">
+                <div class="skill-bar__fill" data-percent="92"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Advertising Creatives</span>
+                <span class="skill-bar__percent">88%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Advertising Creatives 88%">
+                <div class="skill-bar__fill" data-percent="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Layout Design</span>
+                <span class="skill-bar__percent">90%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Layout Design 90%">
+                <div class="skill-bar__fill" data-percent="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Image Composition</span>
+                <span class="skill-bar__percent">86%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" aria-label="Image Composition 86%">
+                <div class="skill-bar__fill" data-percent="86"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group D: Marketing & Group E: Design Software -->
+          <div class="skills__group">
+            <div class="skills__group-header">
+              <h3 class="skills__group-title">Marketing & Software</h3>
+              <span class="skills__group-category">Strategy & Tools</span>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Marketing Campaign Planning</span>
+                <span class="skill-bar__percent">82%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Marketing Campaign Planning 82%">
+                <div class="skill-bar__fill" data-percent="82"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Social Media Content</span>
+                <span class="skill-bar__percent">88%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Social Media Content 88%">
+                <div class="skill-bar__fill" data-percent="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__header">
+                <span class="skill-bar__name">Creative Communication</span>
+                <span class="skill-bar__percent">85%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Creative Communication 85%">
+                <div class="skill-bar__fill" data-percent="85"></div>
+              </div>
+            </div>
+
+            <!-- Software tools (confirmed only) -->
+            <div style="margin-top: 0.5rem; padding-top: 0.85rem; border-top: 1px dashed var(--color-border-subtle);">
+              <span style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); font-weight: 600; display: block; margin-bottom: 0.75rem;">Design Software</span>
+              
+              <div class="skill-bar" style="margin-bottom: 0.85rem;">
+                <div class="skill-bar__header">
+                  <span class="skill-bar__name">Adobe Illustrator</span>
+                  <span class="skill-bar__percent">95%</span>
+                </div>
+                <div class="skill-bar__track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Adobe Illustrator 95%">
+                  <div class="skill-bar__fill" data-percent="95"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-bar__header">
+                  <span class="skill-bar__name">Adobe Photoshop</span>
+                  <span class="skill-bar__percent">92%</span>
+                </div>
+                <div class="skill-bar__track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Adobe Photoshop 92%">
+                  <div class="skill-bar__fill" data-percent="92"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. PROJECTS / PORTFOLIO SECTION
+         ====================================================================== -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Curated Case Studies</span>
+          <h2 class="heading-section">Selected Projects</h2>
+          <p class="section-header__desc">
+            Explore comprehensive brand identity projects, detailed case studies, and visual applications.
+          </p>
+        </div>
+
+        <!-- Project Categories Filter -->
+        <div class="projects__filters" role="tablist" aria-label="Filter projects by discipline">
+          <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="brand-identity" role="tab" aria-selected="false">Brand Identity & Guidelines</button>
+          <button class="filter-btn" data-filter="logo-design" role="tab" aria-selected="false">Logo Design</button>
+          <button class="filter-btn" data-filter="social-media" role="tab" aria-selected="false">Social Media Design</button>
+          <button class="filter-btn" data-filter="packaging" role="tab" aria-selected="false">Packaging & Print Design</button>
+          <button class="filter-btn" data-filter="marketing" role="tab" aria-selected="false">Marketing Campaigns</button>
+          <button class="filter-btn" data-filter="mockups" role="tab" aria-selected="false">Mockups & Presentations</button>
+          <button class="filter-btn" data-filter="menus" role="tab" aria-selected="false">Menus & Restaurant Branding</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects__grid" id="projectsGrid">
+          
+          <!-- FEATURED CASE STUDY: THEA PERFUME -->
+          <article class="project-card" data-category="brand-identity,logo-design,packaging,mockups,social-media">
+            <a href="projects/thea.html" class="project-card__thumb-link" aria-label="View THEA Perfume Case Study">
+              <img
+                src="images/projects/thea/cover.jpg"
+                alt="THEA Perfume Brand Visual Identity Project Cover"
+                class="project-card__img"
+                onerror="handleImageError(this, 'THEA Perfume Cover', 'images/projects/thea/cover.jpg')"
+              >
+              <span class="project-card__badge-featured">Featured Case Study</span>
+            </a>
+            <div class="project-card__body">
+              <span class="project-card__category">Perfume Brand Visual Identity</span>
+              <h3 class="project-card__title">THEA Perfume</h3>
+              <p class="project-card__desc">
+                A perfume branding project focused on creating a distinctive visual identity through logo design, typography, color direction, and cohesive brand applications.
+              </p>
+              <div class="project-card__footer">
+                <span style="font-size: 0.8rem; color: var(--color-muted);">NTI at Creativa</span>
+                <a href="projects/thea.html" class="project-card__link">
+                  View Full Case Study
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 
+            FUTURE PROJECT ENTRY: eSIM Project
+            Status: Unpublished / Pending Assets
+            Per user specification: eSIM project is kept unpublished until actual assets 
+            and details are confirmed.
+          -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. TESTIMONIALS SECTION
+         ====================================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header" style="text-align: center; margin-bottom: 2.5rem;">
+          <span class="eyebrow">Client Feedback</span>
+          <h2 class="heading-section">Testimonials</h2>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-mark">“</div>
+          <h3 class="testimonial-card__heading">A Thoughtful Approach to Design</h3>
+          <p class="testimonial-card__text">
+            "She pays attention to details and puts real effort into developing a clear visual direction. Her work shows creativity and a good understanding of brand identity."
+          </p>
+          <div>
+            <span class="testimonial-card__note">
+              Sample Feedback Placeholder · Replaceable with Approved Client Testimonial
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. SERVICES SECTION (7 INTERACTIVE 3D FLIPPING CARDS)
+         ====================================================================== -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="section-header section-header--split">
+          <div>
+            <span class="eyebrow">What I Offer</span>
+            <h2 class="heading-section">Specialized Design Services</h2>
+          </div>
+          <p class="section-header__desc">
+            Click or tap any service card to view its specific focus and request a custom project collaboration.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          
+          <!-- Service 1: Visual Identity Design -->
+          <div class="service-card" tabindex="0" role="button" aria-label="Visual Identity Design card, click to flip" data-service-name="Visual Identity Design">
+            <div class="service-card__inner">
+              <!-- Front -->
+              <div class="service-card__face service-card__face--front">
+                <span class="service-card__num">01</span>
+                <div class="service-card__icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <h3 class="service-card__title">Visual Identity Design</h3>
+                <div class="service-card__flip-hint">
+                  <span>Click to view details</span>
+                  <span>↻</span>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="service-card__face service-card__face--back">
+                <div class="service-card__back-top">
+                  <span class="service-card__num">01</span>
+                  <span style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent);">Details</span>
+                </div>
+                <h4 class="service-card__back-title">Visual Identity Design</h4>
+                <p class="service-card__back-desc">
+                  Develop a cohesive visual identity that reflects a brand's personality through colors, typography, visual direction, and relevant brand applications.
+                </p>
+                <div class="service-card__back-actions">
+                  <button type="button" class="btn btn--primary btn--sm service-card__btn-request">Request This Service</button>
+                  <button type="button" class="service-card__btn-return" aria-label="Flip back">⤶</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Logo Design -->
+          <div class="service-card" tabindex="0" role="button" aria-label="Logo Design card, click to flip" data-service-name="Logo Design">
+            <div class="service-card__inner">
+              <!-- Front -->
+              <div class="service-card__face service-card__face--front">
+                <span class="service-card__num">02</span>
+                <div class="service-card__icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"></path>
+                  </svg>
+                </div>
+                <h3 class="service-card__title">Logo Design</h3>
+                <div class="service-card__flip-hint">
+                  <span>Click to view details</span>
+                  <span>↻</span>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="service-card__face service-card__face--back">
+                <div class="service-card__back-top">
+                  <span class="service-card__num">02</span>
+                  <span style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent);">Details</span>
+                </div>
+                <h4 class="service-card__back-title">Logo Design</h4>
+                <p class="service-card__back-desc">
+                  Create a distinctive logo that communicates a project's identity and provides a clear foundation for its visual presence.
+                </p>
+                <div class="service-card__back-actions">
+                  <button type="button" class="btn btn--primary btn--sm service-card__btn-request">Request This Service</button>
+                  <button type="button" class="service-card__btn-return" aria-label="Flip back">⤶</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Social Media Design -->
+          <div class="service-card" tabindex="0" role="button" aria-label="Social Media Design card, click to flip" data-service-name="Social Media Design">
+            <div class="service-card__inner">
+              <!-- Front -->
+              <div class="service-card__face service-card__face--front">
+                <span class="service-card__num">03</span>
+                <div class="service-card__icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <h3 class="service-card__title">Social Media Design</h3>
+                <div class="service-card__flip-hint">
+                  <span>Click to view details</span>
+                  <span>↻</span>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="service-card__face service-card__face--back">
+                <div class="service-card__back-top">
+                  <span class="service-card__num">03</span>
+                  <span style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent);">Details</span>
+                </div>
+                <h4 class="service-card__back-title">Social Media Design</h4>
+                <p class="service-card__back-desc">
+                  Design creative social media posts and advertising visuals that maintain brand consistency and communicate messages clearly.
+                </p>
+                <div class="service-card__back-actions">
+                  <button type="button" class="btn btn--primary btn--sm service-card__btn-request">Request This Service</button>
+                  <button type="button" class="service-card__btn-return" aria-label="Flip back">⤶</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4: Packaging Design -->
+          <div class="service-card" tabindex="0" role="button" aria-label="Packaging Design card, click to flip" data-service-name="Packaging Design">
+            <div class="service-card__inner">
+              <!-- Front -->
+              <div class="service-card__face service-card__face--front">
+                <span class="service-card__num">04</span>
+                <div class="service-card__icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <h3 class="service-card__title">Packaging Design</h3>
+                <div class="service-card__flip-hint">
+                  <span>Click to view details</span>
+                  <span>↻</span>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="service-card__face service-card__face--back">
+                <div class="service-card__back-top">
+                  <span class="service-card__num">04</span>
+                  <span style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent);">Details</span>
+                </div>
+                <h4 class="service-card__back-title">Packaging Design</h4>
+                <p class="service-card__back-desc">
+                  Create product packaging and presentation designs that align with the brand's visual identity and help products stand out.
+                </p>
+                <div class="service-card__back-actions">
+                  <button type="button" class="btn btn--primary btn--sm service-card__btn-request">Request This Service</button>
+                  <button type="button" class="service-card__btn-return" aria-label="Flip back">⤶</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5: Menu Design -->
+          <div class="service-card" tabindex="0" role="button" aria-label="Menu Design card, click to flip" data-service-name="Menu Design">
+            <div class="service-card__inner">
+              <!-- Front -->
+              <div class="service-card__face service-card__face--front">
+                <span class="service-card__num">05</span>
+                <div class="service-card__icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+                <h3 class="service-card__title">Menu Design</h3>
+                <div class="service-card__flip-hint">
+                  <span>Click to view details</span>
+                  <span>↻</span>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="service-card__face service-card__face--back">
+                <div class="service-card__back-top">
+                  <span class="service-card__num">05</span>
+                  <span style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent);">Details</span>
+                </div>
+                <h4 class="service-card__back-title">Menu Design</h4>
+                <p class="service-card__back-desc">
+                  Design clear, attractive menus for restaurants and cafés, balancing readability, visual appeal, and brand consistency.
+                </p>
+                <div class="service-card__back-actions">
+                  <button type="button" class="btn btn--primary btn--sm service-card__btn-request">Request This Service</button>
+                  <button type="button" class="service-card__btn-return" aria-label="Flip back">⤶</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6: Branding Applications & Mockups -->
+          <div class="service-card" tabindex="0" role="button" aria-label="Branding Applications and Mockups card, click to flip" data-service-name="Branding Applications & Mockups">
+            <div class="service-card__inner">
+              <!-- Front -->
+              <div class="service-card__face service-card__face--front">
+                <span class="service-card__num">06</span>
+                <div class="service-card__icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <h3 class="service-card__title">Branding Applications & Mockups</h3>
+                <div class="service-card__flip-hint">
+                  <span>Click to view details</span>
+                  <span>↻</span>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="service-card__face service-card__face--back">
+                <div class="service-card__back-top">
+                  <span class="service-card__num">06</span>
+                  <span style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent);">Details</span>
+                </div>
+                <h4 class="service-card__back-title">Branding Applications</h4>
+                <p class="service-card__back-desc">
+                  Present a brand identity through carefully designed mockups and visual applications that demonstrate how the identity works across different materials.
+                </p>
+                <div class="service-card__back-actions">
+                  <button type="button" class="btn btn--primary btn--sm service-card__btn-request">Request This Service</button>
+                  <button type="button" class="service-card__btn-return" aria-label="Flip back">⤶</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 7: Business Card & Print Design -->
+          <div class="service-card" tabindex="0" role="button" aria-label="Business Card and Print Design card, click to flip" data-service-name="Business Card & Print Design">
+            <div class="service-card__inner">
+              <!-- Front -->
+              <div class="service-card__face service-card__face--front">
+                <span class="service-card__num">07</span>
+                <div class="service-card__icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                  </svg>
+                </div>
+                <h3 class="service-card__title">Business Card & Print Design</h3>
+                <div class="service-card__flip-hint">
+                  <span>Click to view details</span>
+                  <span>↻</span>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="service-card__face service-card__face--back">
+                <div class="service-card__back-top">
+                  <span class="service-card__num">07</span>
+                  <span style="font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent);">Details</span>
+                </div>
+                <h4 class="service-card__back-title">Business Card & Print</h4>
+                <p class="service-card__back-desc">
+                  Create professional business cards and print materials that communicate a brand's identity through thoughtful typography, layout, and visual consistency.
+                </p>
+                <div class="service-card__back-actions">
+                  <button type="button" class="btn btn--primary btn--sm service-card__btn-request">Request This Service</button>
+                  <button type="button" class="service-card__btn-return" aria-label="Flip back">⤶</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. GET IN TOUCH / CONTACT SECTION
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Start a Project</span>
+          <h2 class="heading-section">Let's Work Together</h2>
+          <p class="section-header__desc">
+            Have a project in mind? Get in touch to discuss your ideas and explore how we can bring your brand's visual direction to life.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Left: Verified Contact Channels -->
+          <div class="contact__intro-box">
+            <p class="text-lead" style="font-size: 1.05rem;">
+              Whether you need a full brand identity from scratch, a refined logo mark, or cohesive brand packaging, I'm available for select client commissions.
+            </p>
+
+            <div class="contact__channels">
+              
+              <!-- Direct Email -->
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-item__details">
+                  <span class="contact-item__name">Direct Email</span>
+                  <a href="mailto:marwaelkawas4@gmail.com" class="contact-item__link">marwaelkawas4@gmail.com</a>
+                </div>
+                <button type="button" class="contact-item__btn-copy" id="btnCopyEmail" title="Copy email address">Copy</button>
+              </div>
+
+              <!-- Behance THEA Project -->
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </div>
+                <div class="contact-item__details">
+                  <span class="contact-item__name">Behance Showcase</span>
+                  <a href="https://www.behance.net/gallery/256492125/THEA-PERFUME" target="_blank" rel="noopener noreferrer" class="contact-item__link">
+                    THEA Perfume Project ↗
+                  </a>
+                </div>
+              </div>
+
+              <!-- LinkedIn Profile -->
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="contact-item__details">
+                  <span class="contact-item__name">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/marwa-mohamed2?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-item__link">
+                    Mohammed Marwa on LinkedIn ↗
+                  </a>
+                </div>
+              </div>
+
+              <!-- WhatsApp (Configurable Placeholder) -->
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </div>
+                <div class="contact-item__details">
+                  <span class="contact-item__name">Direct WhatsApp</span>
+                  <span style="font-size: 0.88rem; color: var(--color-muted);" id="btnWhatsapp">Number pending activation</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right: Direct Project Inquiry Composer -->
+          <div class="inquiry-composer" id="inquiryComposer">
+            <h3 class="inquiry-composer__title">Direct Project Inquiry</h3>
+            <p class="inquiry-composer__desc">
+              Select your required service and draft your project details. This prepares a direct email to marwaelkawas4@gmail.com with your project brief.
+            </p>
+
+            <form id="contactForm" onsubmit="return false;">
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="inquiryService" class="form-label">Service Required</label>
+                <select id="inquiryService" class="form-select">
+                  <option value="Visual Identity Design">Visual Identity Design</option>
+                  <option value="Logo Design">Logo Design</option>
+                  <option value="Social Media Design">Social Media Design</option>
+                  <option value="Packaging Design">Packaging Design</option>
+                  <option value="Menu Design">Menu Design</option>
+                  <option value="Branding Applications & Mockups">Branding Applications & Mockups</option>
+                  <option value="Business Card & Print Design">Business Card & Print Design</option>
+                  <option value="General Branding Inquiry">General Branding Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="inquiryName" class="form-label">Your Name</label>
+                <input type="text" id="inquiryName" class="form-input" placeholder="e.g. Sarah Jenkins" autocomplete="name">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="inquiryClientEmail" class="form-label">Your Email</label>
+                <input type="email" id="inquiryClientEmail" class="form-input" placeholder="e.g. sarah@example.com" autocomplete="email">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="inquiryDesc" class="form-label">Project Overview</label>
+                <textarea id="inquiryDesc" class="form-textarea" placeholder="Tell me about your brand, timeline, and what you aim to achieve..."></textarea>
+              </div>
+
+              <div class="inquiry-composer__actions">
+                <button type="button" class="btn btn--primary" id="btnSendMail">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  Compose Direct Email
+                </button>
+                <button type="button" class="btn btn--outline" id="btnCopyBrief">
+                  Copy Inquiry Brief
+                </button>
+              </div>
+
+              <p class="inquiry-composer__notice">
+                Notice: Directly connects to your default email client with your customized project brief addressed to <strong>marwaelkawas4@gmail.com</strong>.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       11. FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer__wrapper">
+      <div class="footer__brand">
+        <span class="footer__name">Mohammed Marwa</span>
+        <span class="footer__title">Logo & Brand Identity Designer</span>
+      </div>
+
+      <p class="footer__copy">
+        &copy; 2026 Mohammed Marwa. All rights reserved.
+      </p>
+
+      <a href="#hero" class="footer__top-btn" aria-label="Back to top of page">
+        Back to Top
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
